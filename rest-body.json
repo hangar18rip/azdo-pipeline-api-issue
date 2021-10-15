@@ -1,0 +1,13 @@
+{
+    "folder": "/",
+    "name": "samplepipe",
+    "configuration": {
+        "type": "yaml",
+        "path": "sample-pipe.yml",
+        "repository": {
+            "id": "__RepoId__",
+            "name": "__RepoName__",
+            "type": "azureReposGit"
+        }
+    }
+}

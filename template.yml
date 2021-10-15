@@ -1,0 +1,14 @@
+parameters:
+- name: BuildConfiguration
+  type: string
+  default: 'Release'
+
+stages:
+- stage:
+  jobs:
+  - job:
+    pool:
+      vmImage: windows-latest
+    steps:
+    - pwsh: |
+        Write-Host "Hello world"

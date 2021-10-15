@@ -1,0 +1,23 @@
+name: 1.$(date:yyyy).$(date:Mdd).$(rev:r)
+
+trigger:
+- master
+- main
+
+# resources:
+#   repositories:
+#   - repository: pipetemplate
+#     type: git
+#     name: issue-api/issue-api
+
+variables:
+- name: BuildConfiguration
+  value: 'Release'
+- sample: ''
+- sample2: 
+- group: SampleGroup
+- name: var2
+  value: val2
+
+extends:
+  template: template.yml #@pipetemplate
